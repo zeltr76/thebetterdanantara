@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         sans: ["Inter"],
         serif: ["Inter"],
+        "eb-garamond": ["EB Garamond"],
       },
     },
   },
