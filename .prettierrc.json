@@ -1,0 +1,8 @@
+{
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "semi": false,
+  "singleAttributePerLine": true,
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
