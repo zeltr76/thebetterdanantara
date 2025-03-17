@@ -2,8 +2,9 @@
 
 <template>
   <div class="h-[120vh] py-4">
-    <div><Navbar /></div>
-    <!-- <div class="text-3xl font-bold underline">The Better Danantara</div> -->
+    <Navbar />
+
+    <Hero />
   </div>
 </template>
 
