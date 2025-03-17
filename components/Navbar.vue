@@ -5,9 +5,9 @@ const isBurgerClicked = ref(false)
 <template>
   <!-- TODO: Create a functionality to change the document language -->
   <!-- TODO: Maybe create a way so it sticky when passing a certain point -->
-  <nav class="fixed z-[99] w-full px-2 md:px-0">
-    <!-- Tablet and Desktop -->
-    <div class="hidden md:block">
+  <nav class="fixed z-[99] w-full px-2">
+    <!-- Desktop -->
+    <div class="hidden xl:block">
       <div
         class="mx-auto grid max-w-screen-xl grid-cols-3 flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background px-6 py-4 shadow-xl"
       >
@@ -46,8 +46,8 @@ const isBurgerClicked = ref(false)
       </div>
     </div>
 
-    <!-- Mobile -->
-    <div class="space-y-2 md:hidden">
+    <!-- Mobile and Tablet -->
+    <div class="space-y-2 xl:hidden">
       <div
         class="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background p-2 shadow-xl"
       >
