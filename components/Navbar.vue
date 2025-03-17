@@ -5,11 +5,11 @@ const isBurgerClicked = ref(false)
 <template>
   <!-- TODO: Create a functionality to change the document language -->
   <!-- TODO: Maybe create a way so it sticky when passing a certain point -->
-  <nav class="fixed w-full px-2 md:px-0">
+  <nav class="fixed z-[99] w-full px-2 md:px-0">
     <!-- Tablet and Desktop -->
     <div class="hidden md:block">
       <div
-        class="mx-auto grid max-w-screen-xl grid-cols-3 flex-wrap items-center justify-between rounded-md border-2 border-primary px-6 py-4"
+        class="mx-auto grid max-w-screen-xl grid-cols-3 flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background px-6 py-4 shadow-xl"
       >
         <div class="justify-self-start">
           <a
@@ -49,7 +49,7 @@ const isBurgerClicked = ref(false)
     <!-- Mobile -->
     <div class="space-y-2 md:hidden">
       <div
-        class="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between rounded-md border-2 border-primary p-2"
+        class="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background p-2 shadow-xl"
       >
         <div>
           <a
@@ -90,7 +90,7 @@ const isBurgerClicked = ref(false)
       <!-- Dropdown -->
       <div
         v-show="isBurgerClicked"
-        class="space-y-2 rounded-md border-2 border-primary p-2"
+        class="space-y-2 rounded-md border-2 border-primary bg-background p-2 shadow-xl"
       >
         <ul class="space-y-2 whitespace-nowrap text-sm font-semibold uppercase">
           <li class="decoration-2 hover:text-accent hover:underline">
