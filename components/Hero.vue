@@ -1,10 +1,16 @@
 <script setup lang="ts">
-const images = [
-  "https://www.danantaraindonesia.com/images/v3/hero-children-indo.png",
-  "https://www.danantaraindonesia.com/images/v3/building-flag-indo.png",
-]
+// I think there's something wrong with this rendering, I think it renders twice in SSR and CSR
+const images = ref([
+  "/images/hero-children-indo.webp",
+  "/images/building-flag-indo.webp",
+])
 
-const randomImage = images[Math.floor(Math.random() * images.length)]
+const randomImage = ref(images.value[0])
+
+onMounted(() => {
+  randomImage.value =
+    images.value[Math.floor(Math.random() * images.value.length)]
+})
 </script>
 
 <template>
