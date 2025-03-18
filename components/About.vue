@@ -10,7 +10,7 @@
       <div class="w-8 bg-primary"></div>
 
       <div
-        class="font-roboto-serif space-y-4 text-start xl:text-justify xl:text-lg"
+        class="space-y-4 text-start font-roboto-serif xl:text-justify xl:text-lg"
       >
         <p>
           Badan Pengelola Investasi Daya Anagata Nusantara (Danantara Indonesia)

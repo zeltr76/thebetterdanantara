@@ -5,7 +5,7 @@
     <AtomicSectionHeading>Visi & Misi</AtomicSectionHeading>
 
     <div
-      class="font-roboto-serif mx-auto flex max-w-[1000px] flex-col gap-4 xl:text-lg"
+      class="mx-auto flex max-w-[1000px] flex-col gap-4 font-roboto-serif xl:text-lg"
     >
       <div
         class="space-y-2 rounded-md bg-accent p-6 text-background shadow-xl drop-shadow-lg"
