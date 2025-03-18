@@ -26,7 +26,7 @@ onMounted(() => {
         Daya Anagata Nusantara
       </p>
       <p
-        class="text-center font-eb-garamond text-xl leading-none text-background drop-shadow-xl md:text-[40px] xl:text-start xl:text-5xl"
+        class="text-center font-eb-garamond text-[24px] text-xl leading-none text-background drop-shadow-xl md:text-[40px] xl:text-start xl:text-5xl"
       >
         "Demi Kemakmuran Indonesia"
       </p>
