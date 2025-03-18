@@ -5,12 +5,12 @@
     <AtomicSectionHeading>Struktur Danantara</AtomicSectionHeading>
 
     <div
-      class="flex flex-col items-stretch gap-2 md:items-center xl:flex-row xl:items-stretch xl:gap-4"
+      class="flex flex-col items-stretch gap-2 md:items-center md:gap-4 xl:flex-row xl:items-stretch"
     >
       <img
         src="/images/struktur-organisasi-danantara.webp"
-        alt="Struktur organisasi Danantara"
-        class="aspect-square max-w-[500px] cursor-pointer rounded-md border-2 border-accent shadow-xl"
+        alt="Struktur Organisasi Danantara"
+        class="max-w-[500px] cursor-pointer rounded-md border-2 border-accent shadow-xl"
         @click="
           navigateTo(
             'https://www.erakini.id/images/infografis/struktur-organisasi-danantara-indonesia-01_1740616419.webp',
@@ -20,26 +20,31 @@
         loading="lazy"
       />
       <div
-        class="relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
+        class="relative w-full max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
       >
         <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
 
-        <h2 class="font-semibold uppercase drop-shadow-xl md:text-xl">
+        <h2
+          class="text-center font-semibold uppercase drop-shadow-xl md:text-xl"
+        >
           Struktur Organisasi:
         </h2>
 
-        <ul class="space-y-1 text-sm drop-shadow-xl md:text-xl">
-          <li>Presiden Republik Indonesia: Prabowo Subianto</li>
+        <ul class="space-y-2 text-center text-sm drop-shadow-xl md:text-xl">
+          <li>
+            Presiden Republik Indonesia: <br />
+            Prabowo Subianto
+          </li>
           <li>
             Dewan Penasihat:
-            <ul class="list-disc pl-4">
+            <ul>
               <li>Joko Widodo</li>
               <li>Susilo Bambang Yudhoyono (SBY)</li>
             </ul>
           </li>
           <li>
             Dewan Pengawas:
-            <ul class="list-disc pl-4">
+            <ul>
               <li>Ketua: Erick Thohir</li>
               <li>Wakil Ketua: Muliaman D. Hadad</li>
               <li>Anggota: Sri Mulyani</li>
@@ -47,7 +52,7 @@
           </li>
           <li>
             Direksi:
-            <ul class="list-disc pl-4">
+            <ul>
               <li>CEO: Rosan Perkasa Roesiani</li>
               <li>COO: Dony Oskaria</li>
               <li>CIO: Pandu Sjahrir</li>

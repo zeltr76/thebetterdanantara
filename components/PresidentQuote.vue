@@ -13,15 +13,15 @@
         class="flex w-auto flex-col items-center justify-center gap-2 p-6 text-center"
       >
         <p
-          class="font-eb-garamond text-2xl font-bold text-background drop-shadow-xl xl:text-4xl"
+          class="font-eb-garamond text-2xl font-bold text-background drop-shadow-xl md:text-3xl xl:text-4xl"
         >
           "Semua kekayaan kita harus sebesar-besarnya untuk kepentingan dan
           kemakmuran rakyat kita (rakyat Indonesia)."
         </p>
-        <p class="text-xs font-light text-background drop-shadow-xl xl:text-sm">
+        <p class="text-xs font-light text-background drop-shadow-xl md:text-sm">
           Pidato Presiden Prabowo Subianto pada Sidang Paripurna MPR RI dalam
-          rangka Pelantikan Presiden dan Wakil Presiden RI Terpilih Periode
-          2024-2029.
+          Rangka Pelantikan Presiden dan Wakil Presiden RI Terpilih Periode
+          2024–2029.
         </p>
       </div>
     </div>

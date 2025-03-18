@@ -27,28 +27,30 @@
         <ul class="list-disc space-y-1 pl-4 text-start xl:text-justify">
           <li>
             Mengelola kekayaan negara secara profesional, transparan, dan
-            berkelanjutan sesuai dengan prinsip
+            berkelanjutan sesuai prinsip
             <span class="inline-block italic">good governance</span> untuk
-            mendorong kesejahteraan rakyat, sebagaimana diamanatkan dalam Pasal
-            33 Ayat 3 UUD 1945 dan misi Asta Cita.
+            meningkatkan kesejahteraan rakyat, sebagaimana diamanatkan dalam
+            Pasal 33 Ayat (3) Undang-Undang Dasar Negara Republik Indonesia
+            Tahun 1945 dan Misi Asta Cita.
           </li>
           <li>
-            Mengoptimalkan dan mengelola aset BUMN untuk menciptakan nilai
-            tambah ekonomi yang signifikan.
+            Mengoptimalkan pengelolaan aset BUMN untuk menciptakan nilai tambah
+            ekonomi yang signifikan.
           </li>
           <li>
             Menjadi katalisator pertumbuhan ekonomi nasional melalui investasi
-            strategis di sektor prioritas yang mendorong daya saing global.
+            strategis di sektor prioritas guna meningkatkan daya saing global.
           </li>
           <li>
-            Menarik dan mengakselerasi investasi domestik maupun internasional
-            dengan membangun kemitraan strategis guna mendukung pembangunan
-            nasional yang inklusif dan berkelanjutan.
+            Menarik dan mempercepat investasi domestik maupun internasional
+            dengan membentuk kemitraan strategis dalam rangka mendukung
+            pembangunan nasional yang inklusif dan berkelanjutan.
           </li>
           <li>
-            Membangun institusi Sovereign Wealth Fund yang mandiri dan unggul,
-            dengan tata kelola keuangan yang sehat serta berorientasi pada
-            keberlanjutan jangka panjang.
+            Membangun institusi
+            <span class="inline-block italic">Sovereign Wealth Fund</span> yang
+            mandiri dan unggul, didukung tata kelola keuangan yang sehat serta
+            berorientasi pada keberlanjutan jangka panjang.
           </li>
         </ul>
       </div>
