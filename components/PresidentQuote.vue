@@ -2,13 +2,12 @@
 
 <template>
   <div class="mx-auto max-w-screen-xl bg-primary">
-    <div
-      class="flex flex-col items-center gap-2 p-4 xl:flex-row xl:gap-0 xl:p-0"
-    >
+    <div class="flex flex-col items-center gap-2 p-0 xl:flex-row xl:gap-0">
       <img
         src="/public/images/presiden-prabowo.webp"
         alt="Presiden Prabowo Subianto hormat"
-        class="w-[300px] xl:w-[500px]"
+        loading="lazy"
+        class="order-last w-[300px] xl:order-first xl:w-[500px]"
       />
       <div
         class="flex w-auto flex-col items-center justify-center gap-2 p-6 text-center"
