@@ -2,9 +2,8 @@
 
 <template>
   <div class="mx-auto max-w-[1000px] space-y-4">
-    <h1 class="text-center text-2xl font-bold uppercase">
-      Struktur Organisasi Danantara
-    </h1>
+    <AtomicSectionHeading>Struktur Organisasi Danantara</AtomicSectionHeading>
+
     <div
       class="flex flex-col items-stretch gap-2 md:items-center xl:flex-row xl:items-stretch xl:gap-4"
     >
@@ -18,19 +17,18 @@
             { open: { target: '_blank' }, external: true },
           )
         "
+        loading="lazy"
       />
       <div
-        class="relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/public/images/danantara-building-trademark.webp')] bg-cover bg-bottom px-4 py-2 text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
+        class="font-roboto-serif relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/public/images/danantara-building-trademark.webp')] bg-cover bg-bottom px-4 py-2 text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
       >
-        <div class="absolute inset-0 z-[-1] rounded-md bg-black/80"></div>
+        <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
 
         <h2 class="text-xl font-semibold uppercase drop-shadow-xl">
           Struktur Organisasi:
         </h2>
 
-        <ul
-          class="list-disc space-y-1 pl-4 text-sm font-semibold drop-shadow-xl md:text-xl"
-        >
+        <ul class="space-y-1 text-sm drop-shadow-xl md:text-xl">
           <li>Presiden Republik Indonesia: Prabowo Subianto</li>
           <li>
             Dewan Penasihat:
