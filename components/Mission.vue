@@ -2,17 +2,17 @@
 
 <template>
   <div class="mx-auto max-w-screen-xl space-y-4">
-    <h1 class="space-y-4 text-center text-2xl font-bold uppercase">
-      Visi & Misi
-    </h1>
+    <AtomicSectionHeading>Visi & Misi</AtomicSectionHeading>
 
-    <div class="mx-auto flex max-w-[1000px] flex-col gap-4">
+    <div
+      class="font-roboto-serif mx-auto flex max-w-[1000px] flex-col gap-4 xl:text-lg"
+    >
       <div
-        class="space-y-2 rounded-md bg-accent px-4 py-2 text-background shadow-xl"
+        class="space-y-2 rounded-md bg-accent p-6 text-background shadow-xl drop-shadow-lg"
       >
-        <h2 class="text-xl font-semibold uppercase">Visi:</h2>
+        <h2 class="font-semibold uppercase underline md:text-xl">Visi:</h2>
 
-        <p class="text-start font-semibold xl:text-justify">
+        <p class="text-start xl:text-justify">
           Danantara Indonesia mendorong transformasi ekonomi Indonesia melalui
           pengembangan lembaga Dana Kekayaan Negara (Sovereign Wealth Fund)
           bertaraf internasional yang mendukung pembangunan nasional serta
@@ -20,13 +20,11 @@
         </p>
       </div>
       <div
-        class="space-y-2 rounded-md bg-accent px-4 py-2 text-background shadow-xl"
+        class="space-y-2 rounded-md bg-accent p-6 text-background shadow-xl drop-shadow-lg"
       >
-        <h2 class="text-xl font-semibold uppercase">Misi:</h2>
+        <h2 class="font-semibold uppercase underline md:text-xl">Misi:</h2>
 
-        <ul
-          class="list-disc space-y-1 pl-4 text-start font-semibold xl:text-justify"
-        >
+        <ul class="list-disc space-y-1 pl-4 text-start xl:text-justify">
           <li>
             Mengelola kekayaan negara secara profesional, transparan, dan
             berkelanjutan sesuai dengan prinsip
