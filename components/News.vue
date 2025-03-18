@@ -29,9 +29,9 @@ const articles = ref([
 
 <template>
   <div class="mx-auto max-w-screen-xl space-y-4">
-    <h1 class="text-center text-2xl font-bold uppercase">Berita</h1>
+    <AtomicSectionHeading>Berita</AtomicSectionHeading>
 
-    <div class="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-4">
+    <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
       <div
         v-for="(article, idx) in articles"
         :class="{ hidden: idx > articles.length - 3 }"
@@ -41,6 +41,7 @@ const articles = ref([
         <img
           :src="article.img"
           :alt="article.title + ' image'"
+          loading="lazy"
           class="h-40 w-full object-cover object-center shadow-xl"
         />
         <div class="p-4">
