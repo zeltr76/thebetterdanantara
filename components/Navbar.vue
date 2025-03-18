@@ -38,31 +38,31 @@ onMounted(() => {
           class="flex flex-row gap-4 justify-self-center whitespace-nowrap font-semibold uppercase"
         >
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('tentang')"
           >
             Tentang
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('misi')"
           >
             Visi & Misi
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('struktur')"
           >
             Struktur
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('berita')"
           >
             Berita
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('kontak')"
           >
             Kontak
@@ -134,31 +134,31 @@ onMounted(() => {
       >
         <ul class="space-y-2 whitespace-nowrap text-sm font-semibold uppercase">
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('tentang')"
           >
             Tentang
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('misi')"
           >
             Visi & Misi
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('struktur')"
           >
             Struktur
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('berita')"
           >
             Berita
           </li>
           <li
-            class="decoration-2 hover:text-accent hover:underline"
+            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('kontak')"
           >
             Kontak
