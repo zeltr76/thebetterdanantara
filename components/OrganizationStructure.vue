@@ -2,13 +2,13 @@
 
 <template>
   <div class="mx-auto max-w-[1000px] space-y-4">
-    <AtomicSectionHeading>Struktur Organisasi Danantara</AtomicSectionHeading>
+    <AtomicSectionHeading>Struktur Danantara</AtomicSectionHeading>
 
     <div
       class="flex flex-col items-stretch gap-2 md:items-center xl:flex-row xl:items-stretch xl:gap-4"
     >
       <img
-        src="/public/images/struktur-organisasi-danantara.webp"
+        src="/images/struktur-organisasi-danantara.webp"
         alt="Struktur organisasi Danantara"
         class="aspect-square max-w-[500px] cursor-pointer rounded-md border-2 border-accent shadow-xl"
         @click="
@@ -20,7 +20,7 @@
         loading="lazy"
       />
       <div
-        class="font-roboto-serif relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/public/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
+        class="relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
       >
         <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
 
