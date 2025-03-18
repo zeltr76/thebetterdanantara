@@ -11,7 +11,6 @@
       <PresidentQuote />
       <OrganizationStructure id="struktur" />
       <Holdings />
-      <News id="berita" />
     </div>
 
     <Footer id="kontak" />
