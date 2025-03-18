@@ -8,6 +8,7 @@
       <Hero />
       <About id="tentang" />
       <Mission id="misi" />
+      <Quote />
       <PresidentQuote />
       <OrganizationStructure id="struktur" />
       <Holdings />
