@@ -20,7 +20,7 @@
         loading="lazy"
       />
       <div
-        class="font-roboto-serif relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/public/images/danantara-building-trademark.webp')] bg-cover bg-bottom px-4 py-2 text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
+        class="font-roboto-serif relative aspect-square max-w-[500px] space-y-2 rounded-md bg-[url('/public/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
       >
         <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
 
