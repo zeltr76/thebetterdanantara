@@ -1,0 +1,68 @@
+<script setup lang="ts">
+const year = new Date().getFullYear()
+</script>
+
+<template>
+  <!-- This Footer sucks I hate it -->
+  <footer class="mt-6 space-y-16 bg-text px-4 pb-2 pt-10 text-background">
+    <div
+      class="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-center"
+    >
+      <div class="flex flex-row items-center gap-2">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div class="text-sm xl:text-base">
+          <p class="font-bold">Danantara Indonesia Sentra Mandiri</p>
+          <p>Jl. R.P. Soeroso No.2-4 Jakarta Pusat, 10330, Indonesia</p>
+        </div>
+      </div>
+      <div class="flex flex-row items-center gap-2 text-sm xl:text-base">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div class="text-sm xl:text-base">
+          <p class="font-bold">Email:</p>
+          <NuxtLink to="mailto:contact@danantaraindonesia.com"
+            >contact@danantaraindonesia.com</NuxtLink
+          >
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-sm font-light">
+      &copy; {{ year }}
+      <NuxtLink
+        to="https://github.com/zeltr76"
+        target="_blank"
+        >zeltr76</NuxtLink
+      >
+    </p>
+  </footer>
+</template>
+
+<style scoped></style>

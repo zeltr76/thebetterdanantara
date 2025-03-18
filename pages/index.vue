@@ -1,11 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+navigateTo("/id")
+</script>
 
-<template>
-  <div class="h-[120vh] py-4">
-    <Navbar />
-
-    <Hero />
-  </div>
-</template>
+<template></template>
 
 <style scoped></style>

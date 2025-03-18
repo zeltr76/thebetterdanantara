@@ -1,5 +1,19 @@
 <script setup lang="ts">
 const isBurgerClicked = ref(false)
+
+const scrollTo = ref()
+
+onMounted(() => {
+  scrollTo.value = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 120,
+        behavior: "smooth",
+      })
+    }
+  }
+})
 </script>
 
 <template>
@@ -12,36 +26,65 @@ const isBurgerClicked = ref(false)
         class="mx-auto grid max-w-screen-xl grid-cols-3 flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background px-6 py-4 shadow-xl"
       >
         <div class="justify-self-start">
-          <a
-            href=""
-            @click.prevent
-          >
+          <NuxtLink to="/">
             <img
-              src="https://www.danantaraindonesia.com/images/v2/danantara-logo-black-v2.png"
-              alt=""
+              src="/public/images/danantara-logo-black-v2.webp"
+              alt="Danantara logo"
               class="w-48"
             />
-          </a>
+          </NuxtLink>
         </div>
         <ul
           class="flex flex-row gap-4 justify-self-center whitespace-nowrap font-semibold uppercase"
         >
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('tentang')"
+          >
             Tentang
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('misi')"
+          >
             Visi & Misi
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('struktur')"
+          >
             Struktur
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">Berita</li>
-          <li class="decoration-2 hover:text-accent hover:underline">Kontak</li>
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('berita')"
+          >
+            Berita
+          </li>
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('kontak')"
+          >
+            Kontak
+          </li>
         </ul>
         <div class="flex flex-row justify-self-end">
-          <button class="font-semibold decoration-2 hover:underline">EN</button>
+          <button
+            class="disabled cursor-not-allowed font-semibold decoration-2"
+          >
+            EN
+          </button>
           <span class="mx-2">|</span>
-          <button class="font-semibold decoration-2 hover:underline">ID</button>
+          <button
+            :disabled="$route.path === '/id/' || $route.path === '/id'"
+            :class="{
+              'text-accent': $route.path === '/id/' || $route.path === '/id',
+              underline: $route.path === '/id/' || $route.path === '/id',
+            }"
+            class="font-semibold decoration-2 hover:underline"
+          >
+            ID
+          </button>
         </div>
       </div>
     </div>
@@ -52,16 +95,13 @@ const isBurgerClicked = ref(false)
         class="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between rounded-md border-2 border-primary bg-background p-2 shadow-xl"
       >
         <div>
-          <a
-            href=""
-            @click.prevent
-          >
+          <NuxtLink to="/">
             <img
-              src="https://www.danantaraindonesia.com/images/v2/danantara-logo-black-v2.png"
-              alt=""
+              src="/public/images/danantara-logo-black-v2.webp"
+              alt="Danantara logo"
               class="w-32"
             />
-          </a>
+          </NuxtLink>
         </div>
         <button
           class="justify-self-end font-semibold"
@@ -93,25 +133,57 @@ const isBurgerClicked = ref(false)
         class="space-y-2 rounded-md border-2 border-primary bg-background p-2 shadow-xl"
       >
         <ul class="space-y-2 whitespace-nowrap text-sm font-semibold uppercase">
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('tentang')"
+          >
             Tentang
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('misi')"
+          >
             Visi & Misi
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('struktur')"
+          >
             Struktur
           </li>
-          <li class="decoration-2 hover:text-accent hover:underline">Berita</li>
-          <li class="decoration-2 hover:text-accent hover:underline">Kontak</li>
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('berita')"
+          >
+            Berita
+          </li>
+          <li
+            class="decoration-2 hover:text-accent hover:underline"
+            @click="scrollTo('kontak')"
+          >
+            Kontak
+          </li>
         </ul>
 
         <div class="h-[1px] bg-accent"></div>
 
         <div class="flex flex-row items-center justify-center text-sm">
-          <button class="font-semibold decoration-2 hover:underline">EN</button>
+          <button
+            class="disabled cursor-not-allowed font-semibold decoration-2"
+          >
+            EN
+          </button>
           <span class="mx-2">|</span>
-          <button class="font-semibold decoration-2 hover:underline">ID</button>
+          <button
+            :disabled="$route.path === '/id/' || $route.path === '/id'"
+            :class="{
+              'text-accent': $route.path === '/id/' || $route.path === '/id',
+              underline: $route.path === '/id/' || $route.path === '/id',
+            }"
+            class="font-semibold decoration-2 hover:underline"
+          >
+            ID
+          </button>
         </div>
       </div>
     </div>
