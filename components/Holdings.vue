@@ -49,6 +49,7 @@ const images = ref([
         v-for="image in images"
         :src="image.src"
         :alt="image.alt"
+        class="size-28 xl:size-36"
         loading="lazy"
       />
     </div>
