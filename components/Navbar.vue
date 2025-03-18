@@ -57,12 +57,6 @@ onMounted(() => {
           </li>
           <li
             class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('berita')"
-          >
-            Berita
-          </li>
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('kontak')"
           >
             Kontak
@@ -128,66 +122,80 @@ onMounted(() => {
       </div>
 
       <!-- Dropdown -->
-      <div
-        v-show="isBurgerClicked"
-        class="space-y-2 rounded-md border-2 border-primary bg-background p-2 shadow-xl"
-      >
-        <ul class="space-y-2 whitespace-nowrap text-sm font-semibold uppercase">
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('tentang')"
-          >
-            Tentang
-          </li>
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('misi')"
-          >
-            Visi & Misi
-          </li>
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('struktur')"
-          >
-            Struktur
-          </li>
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('berita')"
-          >
-            Berita
-          </li>
-          <li
-            class="cursor-pointer decoration-2 hover:text-accent hover:underline"
-            @click="scrollTo('kontak')"
-          >
-            Kontak
-          </li>
-        </ul>
+      <Transition>
+        <div
+          v-show="isBurgerClicked"
+          class="space-y-2 rounded-md border-2 border-primary bg-background p-2 shadow-xl"
+        >
+          <ul class="space-y-2 whitespace-nowrap text-sm font-semibold">
+            <li>
+              <button
+                class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
+                @click="scrollTo('tentang')"
+              >
+                Tentang
+              </button>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
+                @click="scrollTo('misi')"
+              >
+                Visi & Misi
+              </button>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
+                @click="scrollTo('struktur')"
+              >
+                Struktur
+              </button>
+            </li>
+            <li>
+              <button
+                class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
+                @click="scrollTo('kontak')"
+              >
+                Kontak
+              </button>
+            </li>
+          </ul>
 
-        <div class="h-[1px] bg-accent"></div>
+          <div class="h-[1px] bg-accent"></div>
 
-        <div class="flex flex-row items-center justify-center text-sm">
-          <button
-            class="disabled cursor-not-allowed font-semibold decoration-2"
-          >
-            EN
-          </button>
-          <span class="mx-2">|</span>
-          <button
-            :disabled="$route.path === '/id/' || $route.path === '/id'"
-            :class="{
-              'text-accent': $route.path === '/id/' || $route.path === '/id',
-              underline: $route.path === '/id/' || $route.path === '/id',
-            }"
-            class="font-semibold decoration-2 hover:underline"
-          >
-            ID
-          </button>
+          <div class="flex flex-row items-center justify-center text-sm">
+            <button
+              class="disabled cursor-not-allowed font-semibold decoration-2"
+            >
+              EN
+            </button>
+            <span class="mx-2">|</span>
+            <button
+              :disabled="$route.path === '/id/' || $route.path === '/id'"
+              :class="{
+                'text-accent': $route.path === '/id/' || $route.path === '/id',
+                underline: $route.path === '/id/' || $route.path === '/id',
+              }"
+              class="font-semibold decoration-2 hover:underline"
+            >
+              ID
+            </button>
+          </div>
         </div>
-      </div>
+      </Transition>
     </div>
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
