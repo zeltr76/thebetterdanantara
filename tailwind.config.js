@@ -21,6 +21,7 @@ export default {
         sans: ["Inter"],
         serif: ["Inter"],
         "eb-garamond": ["EB Garamond"],
+        "roboto-serif": ["Roboto Serif"],
       },
     },
   },
