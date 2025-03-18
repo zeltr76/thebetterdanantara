@@ -4,7 +4,9 @@ const year = new Date().getFullYear()
 
 <template>
   <!-- This Footer sucks I hate it -->
-  <footer class="mt-6 space-y-16 bg-text px-4 pb-2 pt-10 text-background">
+  <footer
+    class="mt-16 space-y-16 bg-text px-4 pb-2 pt-10 text-background xl:mt-24"
+  >
     <div
       class="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-center"
     >
