@@ -24,7 +24,7 @@
       >
         <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
 
-        <h2 class="text-xl font-semibold uppercase drop-shadow-xl">
+        <h2 class="font-semibold uppercase drop-shadow-xl md:text-xl">
           Struktur Organisasi:
         </h2>
 
