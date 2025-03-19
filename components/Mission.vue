@@ -24,7 +24,7 @@
       >
         <h2 class="font-semibold uppercase underline md:text-xl">Misi:</h2>
 
-        <ul class="list-disc space-y-1 pl-4 text-start xl:text-justify">
+        <ul class="list-disc space-y-1 pl-5 text-start xl:text-justify">
           <li>
             Mengelola kekayaan negara secara profesional, transparan, dan
             berkelanjutan sesuai prinsip
