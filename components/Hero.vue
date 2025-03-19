@@ -10,6 +10,13 @@ if (!randomImage.value) {
   randomImage.value =
     images.value[Math.floor(Math.random() * images.value.length)]
 }
+
+const showImage = ref(false)
+
+onMounted(async () => {
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+  showImage.value = true
+})
 </script>
 
 <template>
@@ -17,13 +24,23 @@ if (!randomImage.value) {
     <div
       class="relative flex h-[600px] flex-col items-center justify-center gap-1 shadow-xl md:h-[350px] xl:h-[500px] xl:gap-2"
     >
+      <!-- Show img when resolved -->
+      <!-- Otherwise show placeholder -->
       <img
+        v-show="showImage"
         class="absolute inset-0 h-[600px] w-full object-cover md:h-[350px] xl:h-[500px]"
         :src="randomImage"
-        alt=""
       />
+      <div
+        v-show="!showImage"
+        class="absolute inset-0 animate-pulse bg-gray-400"
+      ></div>
 
-      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Layer -->
+      <div
+        v-show="showImage"
+        class="absolute inset-0 bg-black/40"
+      ></div>
 
       <p
         class="text-center font-eb-garamond text-[60px] font-semibold leading-none text-background drop-shadow-xl xl:text-start xl:text-[96px]"
