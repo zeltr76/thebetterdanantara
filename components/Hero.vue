@@ -1,19 +1,27 @@
 <script setup lang="ts">
-const images = ref([
-  "/images/hero-children-indo.webp",
-  "/images/building-flag-indo.webp",
-])
+const images = ref(["/images/children-indo.webp", "/images/flag-indo.webp"])
 
 const randomImage = ref(null)
 
-if (!randomImage.value) {
-  randomImage.value =
-    images.value[Math.floor(Math.random() * images.value.length)]
-}
+const imageAlt = ref(null)
 
 const showImage = ref(false)
 
 onMounted(async () => {
+  randomImage.value =
+    images.value[Math.floor(Math.random() * images.value.length)]
+
+  imageAlt.value =
+    "Hero " +
+    randomImage.value
+      .split("/")
+      .pop()
+      ?.split(".")[0]
+      .replace(/-/g, " ")
+      .replace(/(\w)(\w*)/g, function (g0, g1, g2) {
+        return g1.toUpperCase() + g2
+      })
+
   await new Promise((resolve) => setTimeout(resolve, 1000))
   showImage.value = true
 })
@@ -26,10 +34,12 @@ onMounted(async () => {
     >
       <!-- Show img when resolved -->
       <!-- Otherwise show placeholder -->
+      <!-- Don't say anything about the "alt" -->
       <img
         v-show="showImage"
         class="absolute inset-0 h-[600px] w-full object-cover md:h-[350px] xl:h-[500px]"
         :src="randomImage"
+        :alt="imageAlt"
       />
       <div
         v-show="!showImage"
