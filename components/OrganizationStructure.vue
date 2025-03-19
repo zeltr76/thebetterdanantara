@@ -19,46 +19,47 @@
         "
         loading="lazy"
       />
+      <!-- I hate the style of this -->
       <div
-        class="relative w-full max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl backdrop-grayscale-0 xl:bg-center"
+        class="relative w-full max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl xl:bg-center"
       >
-        <div class="absolute inset-0 z-[-1] rounded-md bg-black/75"></div>
+        <div class="absolute inset-0 rounded-md bg-black/70"></div>
 
-        <h2
-          class="text-center font-semibold uppercase drop-shadow-xl md:text-xl"
-        >
-          Struktur Organisasi:
-        </h2>
+        <div class="flex items-center justify-center">
+          <h2 class="font-semibold uppercase drop-shadow-xl md:text-xl">
+            Struktur Organisasi:
+          </h2>
 
-        <ul class="space-y-2 text-center text-sm drop-shadow-xl md:text-xl">
-          <li>
-            Presiden Republik Indonesia: <br />
-            Prabowo Subianto
-          </li>
-          <li>
-            Dewan Penasihat:
-            <ul>
-              <li>Joko Widodo</li>
-              <li>Susilo Bambang Yudhoyono (SBY)</li>
-            </ul>
-          </li>
-          <li>
-            Dewan Pengawas:
-            <ul>
-              <li>Ketua: Erick Thohir</li>
-              <li>Wakil Ketua: Muliaman D. Hadad</li>
-              <li>Anggota: Sri Mulyani</li>
-            </ul>
-          </li>
-          <li>
-            Direksi:
-            <ul>
-              <li>CEO: Rosan Perkasa Roesiani</li>
-              <li>COO: Dony Oskaria</li>
-              <li>CIO: Pandu Sjahrir</li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="space-y-2 text-sm drop-shadow-xl md:text-xl">
+            <li>
+              Presiden Republik Indonesia: <br />
+              Prabowo Subianto
+            </li>
+            <li>
+              Dewan Penasihat:
+              <ul>
+                <li>Joko Widodo</li>
+                <li>Susilo Bambang Yudhoyono (SBY)</li>
+              </ul>
+            </li>
+            <li>
+              Dewan Pengawas:
+              <ul>
+                <li>Ketua: Erick Thohir</li>
+                <li>Wakil Ketua: Muliaman D. Hadad</li>
+                <li>Anggota: Sri Mulyani</li>
+              </ul>
+            </li>
+            <li>
+              Direksi:
+              <ul>
+                <li>CEO: Rosan Perkasa Roesiani</li>
+                <li>COO: Dony Oskaria</li>
+                <li>CIO: Pandu Sjahrir</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
