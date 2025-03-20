@@ -13,22 +13,15 @@ const props = defineProps({
     >
       {{ error.statusCode }}
     </h1>
-    <p
-      v-if="error.statusCode === 404"
-      class="xl:text-xl"
-    >
-      {{ error.message }}
-    </p>
-    <p
-      v-else
-      class="xl:text-xl"
-    >
-      Something went wrong, please try again.
+    <p class="max-w-[300px] xl:text-xl">
+      Something went wrong in our end, sorry for the inconvenience. Please go
+      back and try again.
     </p>
     <NuxtLink
       to="/"
-      class="rounded-md bg-accent px-2 py-1 text-background hover:outline hover:outline-2 hover:outline-text xl:text-lg"
-      >Kembali</NuxtLink
+      class="rounded-md bg-accent px-2 py-1 uppercase text-background hover:text-text xl:text-lg"
     >
+      Back
+    </NuxtLink>
   </div>
 </template>
