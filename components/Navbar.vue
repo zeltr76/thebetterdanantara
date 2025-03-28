@@ -49,12 +49,12 @@ onMounted(() => {
           >
             Visi & Misi
           </li>
-          <li
+          <!-- <li
             class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('struktur')"
           >
             Struktur
-          </li>
+          </li> -->
           <li
             class="cursor-pointer decoration-2 hover:text-accent hover:underline"
             @click="scrollTo('kontak')"
@@ -64,7 +64,7 @@ onMounted(() => {
         </ul>
         <div class="flex flex-row justify-self-end">
           <button
-            class="disabled cursor-not-allowed font-semibold decoration-2"
+            class="disabled cursor-not-allowed font-semibold text-black/50 decoration-2"
           >
             EN
           </button>
@@ -144,14 +144,14 @@ onMounted(() => {
                 Visi & Misi
               </button>
             </li>
-            <li>
+            <!-- <li>
               <button
                 class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
                 @click="scrollTo('struktur')"
               >
                 Struktur
               </button>
-            </li>
+            </li> -->
             <li>
               <button
                 class="cursor-pointer uppercase decoration-2 hover:text-accent hover:underline"
@@ -166,7 +166,7 @@ onMounted(() => {
 
           <div class="flex flex-row items-center justify-center text-sm">
             <button
-              class="disabled cursor-not-allowed font-semibold decoration-2"
+              class="disabled cursor-not-allowed font-semibold text-black/50 decoration-2"
             >
               EN
             </button>

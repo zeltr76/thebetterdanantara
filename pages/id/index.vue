@@ -10,7 +10,7 @@
       <Mission id="misi" />
       <Quote />
       <PresidentQuote />
-      <OrganizationStructure id="struktur" />
+      <!-- <OrganizationStructure id="struktur" /> -->
       <Holdings />
     </div>
 
