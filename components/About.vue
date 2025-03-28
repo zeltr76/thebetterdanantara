@@ -2,7 +2,7 @@
 
 <template>
   <div class="mx-auto max-w-screen-xl space-y-4">
-    <AtomicSectionHeading>Tentang Danantara</AtomicSectionHeading>
+    <AtomicHeading>Tentang Danantara</AtomicHeading>
 
     <div
       class="mx-auto flex max-w-[300px] flex-row gap-2 md:max-w-screen-md xl:gap-4"

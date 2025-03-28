@@ -2,7 +2,7 @@
 
 <template>
   <div class="mx-auto max-w-screen-xl space-y-4">
-    <AtomicSectionHeading>Visi & Misi</AtomicSectionHeading>
+    <AtomicHeading>Visi & Misi</AtomicHeading>
 
     <div
       class="mx-auto flex max-w-[1000px] flex-col gap-4 font-roboto-serif xl:text-lg"

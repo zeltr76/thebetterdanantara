@@ -40,7 +40,7 @@ const images = ref([
 
 <template>
   <div class="mx-auto max-w-[1000px] space-y-4">
-    <AtomicSectionHeading>Holdings</AtomicSectionHeading>
+    <AtomicHeading>Holdings</AtomicHeading>
 
     <div
       class="grid grid-cols-2 justify-items-center gap-4 md:grid-cols-3 xl:grid-cols-4"

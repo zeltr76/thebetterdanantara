@@ -1,8 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
+  <!-- TODO: what is the images don't show? fix this -->
   <div class="mx-auto max-w-[1000px] space-y-4">
-    <AtomicSectionHeading>Struktur Danantara</AtomicSectionHeading>
+    <AtomicHeading>Struktur Danantara</AtomicHeading>
 
     <div
       class="flex flex-col items-stretch gap-2 md:items-center md:gap-4 xl:flex-row xl:items-stretch"
@@ -23,7 +24,7 @@
       <div
         class="relative w-full max-w-[500px] space-y-2 rounded-md bg-[url('/images/danantara-building-trademark.webp')] bg-cover bg-bottom p-4 font-roboto-serif text-background shadow-xl xl:bg-center"
       >
-        <div class="absolute inset-0 rounded-md bg-black/70"></div>
+        <div class="absolute inset-0 rounded-md bg-black/80"></div>
 
         <div class="flex items-center justify-center">
           <h2 class="font-semibold uppercase drop-shadow-xl md:text-xl">
